@@ -1,4 +1,4 @@
-# Getting Started with Avakash
+# Getting Started with Avkash
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
