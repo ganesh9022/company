@@ -5,27 +5,19 @@ import os
 ## load the .env
 load_dotenv()
 
-## make connection
 class MogoConnection():
     def __init__(self):
-        # Load environment variables
-        self.URI = os.getenv('URI')
-        self.MONGO_USERNAME = os.getenv('MONGO_USERNAME')
-        self.MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')
-        self.DBNAME = os.getenv('DBNAME')
-        
-        # Initialize the MongoDB client
-        self.client = MongoClient(self.URI)
+        self.uri = os.getenv('URI')
+        self.db_name = os.getenv('DB_NAME', 'leave_portal') # default one is leave portal
 
-        ## confirm db connection
-        try:   
+        ## Runtime
+        self.client = None
+
+    def get_conn(self):
+        try:
+            self.client = MongoClient(self.uri)
             self.client.admin.command('ping')
-            print("Pinged your deployment. You successfully connected to MongoDB!")
-   
+            print("Pinged your deployment. You have successfully connected to MongoDB!")
         except Exception as e:
             print(f"Error occurred while getting connection from mongo client. \n Error: {e}")
-
-    def get_conn(self):        
         return self.client
-       
-
