@@ -1,0 +1,7 @@
+Python- 3.12.1
+Mongodb - atlas
+fastapi - 0.109.0
+pymongo - 4.6.1
+pip - 23.3.2
+uvicorn - 0.27.0.post1
+python-dotenv - 1.0.1
