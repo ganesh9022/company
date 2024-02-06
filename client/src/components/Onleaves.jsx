@@ -19,7 +19,7 @@ const Onleaves = () => {
 
         <div className="pl-1 pt-[75px]">
           <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg w-36">
-            <img className="w-full h-40" src={img} alt="Mountain"/>
+            <img className="w-full h-40" src={img1} alt="Mountain"/>
           </div>
           <div className="font-bold text-xl ml-7 mt-3">Saloani</div>
         </div>

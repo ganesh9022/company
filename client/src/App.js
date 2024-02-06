@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LeaveBalanceCard from "./components/LeavesBalanceCart";
-import UpcommingHolidaysCart from "./components/UpcommingHolidaysCart";
+// import LeaveBalanceCard from "./components/LeavesBalanceCart";
+// import UpcommingHolidaysCart from "./components/UpcommingHolidaysCart";
 import Navbar from "./components/Navbar";
 import Dashboard from "./components/Dashboard";
 import Applyleaves from "./components/Applyleaves";
@@ -15,10 +15,10 @@ import Helpsupport from "./components/Helpsupport";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Routes>
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/Applyleaves" element={<Applyleaves />} />
         <Route path="/Payslip" element={<Payslip />} />
         <Route path="/Setting" element={<Setting />} />

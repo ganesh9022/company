@@ -30,12 +30,7 @@ export default function Timesheet() {
                     Sort by
                   </button>
 
-                  <select id="states" class="ml-3 w-17 ">
-                    <option>Day</option>
-                    <option>Week</option>
-                    <option>Month</option>
-                    <option>Year</option>
-                  </select>
+                  
                 </div>
               </span>
 
