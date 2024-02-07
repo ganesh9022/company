@@ -1,7 +1,7 @@
 .Navbar{
 
     border-right: 1px solid grey;
-    margin: 0px 0px 0px 15px ;
+    /* margin: 0px 0px 0px 15px ; */
     height: 774px;
     }
     
@@ -13,22 +13,17 @@
     /* background-color: red; */
     }
     
-    .dashboardalign{
-        margin-left: 30px;
-        margin-top: -10px;
-    }
+  
     
-    .Timeshhet{
+    /* .Timeshhet{
         margin-top: 50px;
-     /* width: 800px ; */
      margin-left: 50px;
-    }
-    .Onleaves{
+    } */
+    /* .Onleaves{
         margin-top: 30px;
-        /* padding: 20px; */
         height: 90px;
         margin-left: 0px;
-    }
+    } */
     .hovers:hover{
          
       color:greenyellow;

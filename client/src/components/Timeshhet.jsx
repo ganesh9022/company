@@ -6,7 +6,7 @@ const Timesheet = () => {
   return (
     <div>
 <Flex  direction="Column" className='Timeshhet'>
-  <Card size="1" p=""style={{ width: 750,padding:9 }}>
+  <Card size="1" ml="5"style={{ width: 750,padding:9 }}>
   <Flex direction="column" gap="3" ml='5'>
   <Flex gap="8" mb='2'>
   <Text size="6"  weight="bold">Time Sheet</Text>

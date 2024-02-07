@@ -54,7 +54,7 @@ const Navbar = () => {
   };
 
   return (
-    <Flex align="center" columns={['1', '2', '2', '4']} gap="5" p="3" wrap="wrap" className='Onleaves' >
+    <Flex align="center" columns='1' gap="6" p="4" ml='2' mt='5' wrap="wrap" className='Onleaves' >
       <div className="flex border border-slate-300 w-full max-w-[750px] rounded-2xl mx-auto relative pt-7 pl-6">
         <h1 className="text-2xl font-bold top-2  left-8 absolute">On Leave</h1>
         <h1 className="text  top-3 color-red right-8 absolute" onClick={toggleShowAll}>
@@ -76,7 +76,7 @@ const Navbar = () => {
         ))}
 
         {/* Show popup when showAll is true */}
-        
+
         {showAll && (
           <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex justify-center items-center">
             <div className="bg-white p-4 rounded-lg max-w-[80%] max-h-[80%] overflow-auto">

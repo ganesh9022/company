@@ -1,8 +1,8 @@
 import React from 'react'
 import { Flex,Box } from '@radix-ui/themes'
 import './Style.css'
-import Navbar from './Navbar'
 import Tabbar1 from './Tabbar1'
+import Navbar from './Navbar'
 
 const Payslip = () => {
   return (
@@ -11,12 +11,10 @@ const Payslip = () => {
 <Navbar/>
     </div>
 
-    <div className="w-5/6 ">
-      <Box>
+    <div className="w-5/6 " >      <Box>
   <Tabbar1/>
 </Box>
-  
-  
+
 
 
     </div>

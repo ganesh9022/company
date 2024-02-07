@@ -6,7 +6,7 @@ import Tabbar1 from './Tabbar1'
 const Profile = () => {
   return (
     <Flex>
-    <div className="w-1/6  ">
+    <div className="w-1/6  " >
 <Navbar/>
     </div>
 

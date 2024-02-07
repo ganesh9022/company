@@ -18,7 +18,7 @@ const Logout = () => {
       <Box>
   <Tabbar1/>
 </Box>
- 
+  
   
 
 
