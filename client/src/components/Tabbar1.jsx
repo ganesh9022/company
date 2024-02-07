@@ -3,7 +3,7 @@ import { Grid, Box, Text } from '@radix-ui/themes';
 import { MdNotifications } from "react-icons/md";
 import { IoMdMic } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
-
+import './Style.css'
 const Tabbar1 = () => {
   return (
     <div>
@@ -11,7 +11,7 @@ const Tabbar1 = () => {
         
         <div className="logo-sidebar fixed top-3 right-0 mr-11 flex items-center p-2 flex-wrap">
           {/* Notification Icon */}
-          <div className="hidden md:flex items-center mr-3 rounded-full border p-2 bg-lime-500">
+          <div className="notification hidden md:flex items-center mr-3 rounded-full border p-2 ">
             <MdNotifications size="1.5em" color='white' />
           </div>
 

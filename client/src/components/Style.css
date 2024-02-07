@@ -2,7 +2,9 @@
 
     border-right: 1px solid grey;
     /* margin: 0px 0px 0px 15px ; */
-    height: 774px;
+    height: 760px;
+    /* width: 100%; */
+    /* height: 100%; */
     }
     
     .welcome{
@@ -26,6 +28,24 @@
     } */
     .hovers:hover{
          
-      color:greenyellow;
+      /* color:palegreen; */
+      color:limegreen;
         
+    }
+
+    .dot{
+      max-width: 7px;
+      max-height: 7px;
+      /* float: right; */
+      /* margin-left: 60px;
+      margin-top: 10px; */
+      opacity: 0;
+      color: red;      
+    }
+    .hovers:hover .dot {
+      opacity: 1;
+  
+    }
+    .notification{
+      background-color: limegreen;
     }
