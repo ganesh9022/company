@@ -1,7 +1,7 @@
 import React from 'react'
-import img from './assets/img1.jpg'
-import { Grid, Flex, Text, Card } from '@radix-ui/themes';
-
+import img from './assets/book.png'
+import { Grid, Flex, Text, Card,Inset } from '@radix-ui/themes';
+import './Style.css'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -9,24 +9,32 @@ const Navbar = () => {
     <div>
     <div>
       {/* <Card> */}
-      <Grid align="center" wrap='nowrap' columns="1" style={{ }}>
+      <Grid align="center" wrap='nowrap' columns="1" className='Navbar'>
 
-        <Flex direction="column" wrap='nowrap' pl="5" gap='8' style={{ top:10}}>
-        {/* <Link to='/Dashboard' class="flex items-center ps-2.5 mb-5 pt-3 ml-1"> */}
-         {/* <img  src={img} class="h-6 me-3 sm:h-7" alt="Avkash  Logo" /> */}
-         {/* <span class="self-center  text-2xl font-semibold whitespace-nowrap text-green-500">Avkash </span> */}
-         <Text size="7" weight="bold">
-                <h1>Avkash</h1>
-              </Text>
-      {/* </Link> */}
-        </Flex>
-              <Grid align="center" wrap='nowrap' columns="1" style={{ maxWidth: 170, margin: 10 ,height:660}}>
+      <Inset clip="padding-box" side="top" pb="current" mt="5">
+    <img
+      src={img}
+      alt="Bold typography"
+      style={{
+        display: 'Inline-block',
+        objectFit: 'cover',
+        width: '20%',
+        height: 30,
+        
+        // radius:''
+        backgroundColor: 'var(--gray)',
+      }}
+    />
+    <Text size="6" weight='bold'top="4" style={{color:'green', margin:10}}>AVKASH</Text>
+  </Inset>
 
-        <Grid align="center" columns="1" wrap='nowrap' gap="5" p="3">
+              <Grid align="center" wrap='nowrap' columns="1" style={{ maxWidth: 170, margin: 0 ,height:670}}>
+
+        <Grid align="center" columns="1" wrap='nowrap' gap="5" className='dashboardalign'>
           <Link to="/">
             <Flex direction="column">
               <Text size="4" weight="bold">
-                <h1>Dashboard</h1>
+                <h1 className='hovers'>Dashboard</h1>
               </Text>
             </Flex>
           </Link>
@@ -34,7 +42,7 @@ const Navbar = () => {
           <Link to="/Applyleaves">
             <Flex direction="column">
               <Text size="4" weight="bold">
-                <h1>Apply Leave</h1>
+                <h1 className='hovers'>Apply Leave</h1>
               </Text>
             </Flex>
           </Link>
@@ -42,7 +50,7 @@ const Navbar = () => {
           <Link to="/Payslip">
             <Flex direction="column">
               <Text size="4" weight="bold">
-                <h1>Payslip</h1>
+                <h1 className='hovers' >Payslip</h1>
               </Text>
             </Flex>
           </Link>
@@ -50,17 +58,17 @@ const Navbar = () => {
           <Link to="/Setting">
             <Flex direction="column">
               <Text size="4" weight="bold">
-                <h1>Setting</h1>
+                <h1 className='hovers'>Setting</h1>
               </Text>
             </Flex>
           </Link>
         </Grid>
 
-        <Grid align="center" columns="1" gap="6" p="3">
+        <Grid align="center" columns="1" gap="5" className='dashboardalign'>
           <Link to="/Notification">
             <Flex direction="column">
               <Text size="4" weight="bold">
-                <h1>Notification</h1>
+                <h1 className='hovers'>Notification</h1>
               </Text>
             </Flex>
           </Link>
@@ -68,7 +76,7 @@ const Navbar = () => {
           <Link to="/Profile">
             <Flex direction="column">
               <Text size="4" weight="bold">
-                <h1>My Profile</h1>
+                <h1 className='hovers'>My Profile</h1>
               </Text>
             </Flex>
           </Link>
@@ -76,17 +84,17 @@ const Navbar = () => {
           <Link to="/Logout">
             <Flex direction="column">
               <Text size="4" weight="bold">
-                <h1>Logout</h1>
+                <h1 className='hovers'>Logout</h1>
               </Text>
             </Flex>
           </Link>
         </Grid>
 
-        <Grid align="center" columns="1" gap="6" p="3">
+        <Grid align="center" columns="1" gap="6" className='dashboardalign'>
           <Link to="/Helpsupport">
             <Flex direction="column">
               <Text size="4" weight="bold">
-                <h1>Help & Support</h1>
+                <h1 className='hovers'>Help & Support</h1>
               </Text>
             </Flex>
           </Link>

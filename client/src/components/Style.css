@@ -1,0 +1,36 @@
+.Navbar{
+
+    border-right: 1px solid grey;
+    margin: 0px 0px 0px 15px ;
+    height: 774px;
+    }
+    
+    .welcome{
+    /* border: 1px solid red; */
+    padding-top: 30px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    }
+    
+    .dashboardalign{
+        margin-left: 30px;
+        margin-top: -10px;
+    }
+    
+    .Timeshhet{
+        margin-top: 50px;
+     /* width: 800px ; */
+     margin-left: 50px;
+    }
+    .Onleaves{
+        margin-top: 30px;
+        /* padding: 20px; */
+        height: 90px;
+        margin-left: 0px;
+    }
+    .hovers:hover{
+         
+      color:greenyellow;
+        
+    }
