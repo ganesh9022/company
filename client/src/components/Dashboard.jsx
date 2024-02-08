@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { Flex,Box} from '@radix-ui/themes';
+import { Flex,Box,Grid} from '@radix-ui/themes';
 import Tabbar from "./Tabbar";
+
 const Dashboard = () => {
   return (
     <Flex>
@@ -15,13 +16,22 @@ const Dashboard = () => {
 </Box>
   <Box height="auto">
   <Flex>
-    <div className="w-4/6  " >
+    <Flex className="w-4/6 " mt="5"   >
 
-    </div>
+<Grid row="2" gap="3" className="w-4/6 ">
+  <Box>
+
+
+  </Box>
+  <Box >
+  </Box>
+  </Grid>
+
+    </Flex>
 
     <div className="w-2/6 ">
       <Box>
-
+{/* <LeavesBalanceCart/> */}
 </Box>
  
   

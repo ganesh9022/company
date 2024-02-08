@@ -1,8 +1,9 @@
 import React from "react";
-import { Grid, Flex, Text, Card, Inset } from "@radix-ui/themes";
+import { Grid, Flex, Text, Card, Avatar, Inset } from "@radix-ui/themes";
 import "./Style.css";
 import { Link } from "react-router-dom";
 import { BsStack } from "react-icons/bs";
+import { GoDotFill } from "react-icons/go";
 const Navbar = () => {
   return (
     <div>
@@ -12,17 +13,16 @@ const Navbar = () => {
           wrap="nowrap"
           columns="1"
           gap="2"
-          className="Navbar"
-        >
+          className="Navbar">
           <Inset
             clip="padding-box"
             side="top"
             pb="current"
-            mt="6"
+            mt="4"
             ml="4"
             className="flex"
           >
-            <BsStack color="limegreen" className="mt-3 text-xl" />
+            <BsStack color="limegreen" className="mt-4 text-xl" />
             <Text
               size="6"
               weight="bold"
@@ -36,80 +36,90 @@ const Navbar = () => {
             align="center"
             wrap="nowrap"
             columns="1"
-            style={{ maxWidth: 170, margin: 0, height: 670 }}
+            style={{ maxWidth:300, margin: 0, height: 670 }}
           >
             <Grid align="center" columns="1" ml="6" wrap="nowrap" gap="6">
               <Link to="/">
-                <Flex direction="column" wrap="nowrap">
-                  <Text size="4" weight="bold">
-                    <h1 className="hovers"> Dashboard</h1>
-                  </Text>
-                </Flex>
-              </Link>
+              
+                  <Flex className="hovers"  wrap="nowrap">
+                    <Text size="4" weight="bold" >
+                      <span>Dashboard</span>
+                    </Text >
+
+                   <Inset ml="8" > <GoDotFill className="dot " />
+                   </Inset> </Flex>
+                </Link>
 
               <Link to="/Applyleaves">
-                <Flex direction="column" wrap="nowrap">
-                  <Text size="4" weight="bold">
-                    <h1 className="hovers">Apply Leave</h1>
-                  </Text>
-                </Flex>
+              <Flex  className="hovers"  wrap="nowrap">
+                    <Text size="4" weight="bold">
+                      <span>Apply Leave</span>
+                    </Text>
+                    <Inset ml='6' pl="1">    <GoDotFill className="dot" /></Inset>
+                  </Flex>
               </Link>
 
               <Link to="/Payslip">
-                <Flex direction="column" wrap="nowrap">
-                  <Text size="4" weight="bold">
-                    <h1 className="hovers">Payslip</h1>
-                  </Text>
-                </Flex>
+              <Flex className="hovers"  wrap="nowrap">
+                    <Text size="4" weight="bold">
+                      <span>Payslip</span>
+                    </Text>
+                    <Inset ml="7" pl="7" >    <GoDotFill className="dot" /> </Inset>
+                  </Flex>
               </Link>
 
               <Link to="/Setting">
-                <Flex direction="column" wrap="nowrap">
-                  <Text size="4" weight="bold">
-                    <h1 className="hovers">Setting</h1>
-                  </Text>
-                </Flex>
+              <Flex className="hovers"  wrap="nowrap">
+                    <Text size="4" weight="bold">
+                      <span>Setting</span>
+                    </Text>
+               <Inset ml='9' pl="4">     <GoDotFill  className="dot" /></Inset>
+                  </Flex>
               </Link>
             </Grid>
 
-            <Grid align="center" columns="1" gap="6" ml="6">
+            <Grid  gap="6" ml="6">
               <Link to="/Notification">
-                <Flex direction="column" wrap="nowrap">
-                  <Text size="4" weight="bold">
-                    <h1 className="hovers">Notification</h1>
-                  </Text>
-                </Flex>
+              <Flex direction="row" className="hovers" alignItems="center" wrap="nowrap">
+                    <Text size="4" weight="bold">
+                      <span>Notification</span>
+                    </Text>
+                <Inset ml='7'>    <GoDotFill className="dot" /></Inset>
+                  </Flex>
               </Link>
 
               <Link to="/Profile">
-                <Flex direction="column" wrap="nowrap">
-                  <Text size="4" weight="bold">
-                    <h1 className="hovers">My Profile</h1>
-                  </Text>
-                </Flex>
+              <Flex className="hovers" alignItems="center" wrap="nowrap">
+                    <Text size="4" weight="bold">
+                      <span>My Profile </span>
+                    </Text>
+                 <Inset ml="8" pl="1">  <GoDotFill className="dot" /></Inset> 
+                  </Flex>
               </Link>
 
               <Link to="/Logout">
-                <Flex direction="column" wrap="nowrap">
-                  <Text size="4" weight="bold">
-                    <h1 className="hovers">Logout</h1>
-                  </Text>
-                </Flex>
+              <Flex className="hovers" alignItems="center" wrap="nowrap">
+                    <Text size="4" weight="bold">
+                      <span>Logout</span>
+                    </Text>
+                <Inset ml="8" pl="6">    <GoDotFill className="dot " /></Inset>
+                  </Flex>
               </Link>
             </Grid>
 
-            <Grid align="center" columns="1" gap="6" ml="6">
+            <Grid align="center" gap="6" ml="6">
               <Link to="/Helpsupport">
-                <Flex direction="column" wrap="nowrap">
-                  <Text size="4" weight="bold">
-                    <h1 className="hovers">Help & Support</h1>
-                  </Text>
-                </Flex>
+              <Flex direction="row" className="hovers" alignItems="center" wrap="nowrap">
+                    <Text size="4" weight="bold">
+                      <span>Help & Support</span>
+                    </Text>
+                  <Inset ml="1">  <GoDotFill className="dot" /></Inset>
+                  </Flex>
               </Link>
             </Grid>
 
             <Grid align="center" columns="1" gap="8" p="8">
-              <Link to="/Helpsupport">
+              <Link to="#">
                 <Flex direction="column">
                   <Text size="4" weight="bold">
                     <h1></h1>

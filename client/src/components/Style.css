@@ -2,7 +2,7 @@
 
     border-right: 1px solid grey;
     /* margin: 0px 0px 0px 15px ; */
-    height: 760px;
+    height: 770px;
     /* width: 100%; */
     /* height: 100%; */
     }
@@ -34,17 +34,22 @@
     }
 
     .dot{
-      max-width: 7px;
-      max-height: 7px;
+      max-width: 15px;
+      max-height: 15px;
       /* float: right; */
       /* margin-left: 60px;
       margin-top: 10px; */
       opacity: 0;
-      color: red;      
-    }
+      margin-top: 5px;
+      color:limegreen; 
+    /* margin-left: 8px;
+        */
+    
+      }
     .hovers:hover .dot {
       opacity: 1;
-  
+    /* margin-left:30px; */
+   
     }
     .notification{
       background-color: limegreen;

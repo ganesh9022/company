@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import imgs from './assets/img.jpg';
 import img1 from './assets/img1.jpg';
-import { Flex } from '@radix-ui/themes';
+import { Flex,Card } from '@radix-ui/themes';
 
 const Navbar = () => {
   const [showAll, setShowAll] = useState(false);
@@ -54,8 +54,8 @@ const Navbar = () => {
   };
 
   return (
-    <Flex align="center" columns='1' gap="6" p="4" ml='2' mt='5' wrap="wrap" className='Onleaves' >
-      <div className="flex border border-slate-300 w-full max-w-[750px] rounded-2xl mx-auto relative pt-7 pl-6">
+    <Card align="center" columns='1' gap="6" p="4" ml='2' mt='5' wrap="wrap" className='Onleaves' >
+      <div className="flex  max-w-[740px] rounded-2xl mx-auto relative pt-7 pl-6">
         <h1 className="text-2xl font-bold top-2  left-8 absolute">On Leave</h1>
         <h1 className="text  top-3 color-red right-8 absolute" onClick={toggleShowAll}>
           {showAll ? 'Hide' : 'Show all'}
@@ -100,7 +100,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </Flex>
+    </Card>
   );
 };
 
