@@ -1,26 +1,23 @@
-import React from 'react';
-import { Grid, Box, Text } from '@radix-ui/themes';
+import React from "react";
+import { Grid, Box, Text } from "@radix-ui/themes";
 import { MdNotifications } from "react-icons/md";
 import { IoMdMic } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
-import "./Style.css"
+import "./Style.css";
 const Tabbar = () => {
   return (
     <div>
       <Grid row="auto" gap="3" width="auto">
-        <Box height="9" className="welcome flex items-center">
-          <Text size= '6' weight="bold" className="md:inline hidden">
+        <Box height="8" className="welcome flex items-center">
+          <Text size="6" weight="bold" className="md:inline  hidden">
             Welcome, Nikhil Joshi
           </Text>
-       
         </Box>
 
-        <div className="logo-sidebar fixed top-3 right-0 mr-11 flex items-center p-2 flex-wrap">
-          {/* Notification Icon */}
+        <div className="logo-sidebar fixed top-4 right-0 mr-11 flex items-center p-2 flex-wrap">
           <div className=" notification hidden md:flex items-center mr-3 rounded-full border p-2 ">
-            <MdNotifications size="1.5em" color='white' />
+            <MdNotifications size="1.5em" color="white" />
           </div>
-
           <div className="hidden md:flex items-center bg-white border rounded-full p-2">
             <IoIosSearch size="1.2em" />
             <input
@@ -30,13 +27,10 @@ const Tabbar = () => {
             />
             <IoMdMic size="1.2em" />
           </div>
-
-          {/* Notifi collasped */}
           <div className="md:hidden flex items-center">
-            <MdNotifications size="1.5em" color='white' />
+            <MdNotifications size="1.5em" color="white" />
           </div>
-          
-          {/* Mic and Search */}
+
           <button
             data-collapse-toggle="logo-sidebar"
             type="button"
@@ -52,7 +46,13 @@ const Tabbar = () => {
               fill="none"
               viewBox="0 0 17 14"
             >
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
             </svg>
           </button>
         </div>
