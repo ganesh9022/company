@@ -17,5 +17,4 @@ const Setting = () => {
     </Flex>
   );
 };
-
 export default Setting;

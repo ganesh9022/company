@@ -17,5 +17,4 @@ const Payslip = () => {
     </Flex>
   );
 };
-
 export default Payslip;

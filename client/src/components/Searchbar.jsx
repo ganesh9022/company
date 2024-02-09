@@ -55,5 +55,4 @@ const Tabbar1 = () => {
     </div>
   );
 };
-
 export default Tabbar1;

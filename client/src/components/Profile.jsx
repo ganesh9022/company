@@ -17,5 +17,4 @@ const Profile = () => {
     </Flex>
   );
 };
-
 export default Profile;

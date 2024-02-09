@@ -2,17 +2,14 @@
   border-right: 1px solid grey;
   height: 770px;
 }
-
 .welcome {
   padding-top: 30px;
   padding-left: 20px;
   flex-wrap: wrap;
 }
-
 .hovers:hover {
   color: limegreen;
 }
-
 .dot {
   max-width: 15px;
   max-height: 15px;
