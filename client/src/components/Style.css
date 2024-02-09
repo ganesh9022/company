@@ -1,10 +1,7 @@
 .Navbar {
   border-right: 1px solid grey;
-  height: 770px;
 }
 .welcome {
-  padding-top: 30px;
-  padding-left: 20px;
   flex-wrap: wrap;
 }
 .hovers:hover {

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { Flex, Box, Grid } from "@radix-ui/themes";
+import { Flex, Box} from "@radix-ui/themes";
 import Tabbar from "./Tabbar";
 const Dashboard = () => {
   return (
@@ -13,20 +13,9 @@ const Dashboard = () => {
           <Tabbar/>
         </Box>
         <Box height="auto">
-          <Flex>
-            <Flex className="w-4/6 " mt="5">
-              <Grid row="2" gap="3" className="w-4/6 ">
-                <Box></Box>
-              </Grid>
-            </Flex>
-            <div className="w-2/6 ">
-              <Box></Box>
-            </div>
-          </Flex>
         </Box>
       </div>
     </Flex>
   );
 };
-
 export default Dashboard;

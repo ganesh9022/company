@@ -2,9 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Flex, Box } from "@radix-ui/themes";
 import Searchbar from "./Searchbar";
-const Applyleave = () => {
+const Applyleave =()=>{
   return (
-    <>
       <Flex>
         <div className="w-1/6  ">
           <Navbar />
@@ -15,7 +14,6 @@ const Applyleave = () => {
           </Box>
         </div>
       </Flex>
-    </>
   );
 };
 export default Applyleave;

@@ -16,7 +16,7 @@ function App() {
         <Route path="/payslip" element={<Payslip />} />
         <Route path="/setting" element={<Setting />} />
         <Route path="/notification" element={<Notification />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/myprofile" element={<Profile />} />
         <Route path="/helpsupport" element={<Helpsupport />} />
       </Routes>
     </BrowserRouter>
