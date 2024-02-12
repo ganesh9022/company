@@ -1,10 +1,12 @@
 import React from "react";
 import { Grid, Flex, Text, Inset ,Box} from "@radix-ui/themes";
 import "./Style.css";
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 import { BsStack } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
 import * as AlertDialog from "@radix-ui/react-alert-dialog";
+import { useClerk } from "@clerk/clerk-react";
+import { SignOutButton, SignedOut, SignIn } from "@clerk/clerk-react";
 const Navbar = () => {
   return (
     <div>
@@ -97,7 +99,7 @@ const Navbar = () => {
               </Flex>
             </Link>
 
-            <Link to="#">
+          <Link to="#">
               <Flex className="hovers" alignItems="center" wrap="nowrap">
                 <Text size="4" weight="bold">
                   <AlertDialog.Root>
@@ -162,7 +164,8 @@ const Navbar = () => {
                           </AlertDialog.Cancel>
                           <AlertDialog.Action asChild>
                             
-                            <button className="Button red mt-3">Logout</button>
+                            {/* <button className="Button red mt-3">Logout</button> */}
+                            <SignOutButton className="Button red mt-3" signOutCallback={()=> redirect('/')}/>
                           </AlertDialog.Action>
                         </div>
                       </AlertDialog.Content>

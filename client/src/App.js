@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Dashboard from "./components/Dashboard";
 import Applyleave from "./components/Applyleave";
 import Payslip from "./components/Payslip";
@@ -7,10 +8,14 @@ import Profile from "./components/Profile";
 import Notification from "./components/Notification";
 import Setting from "./components/Setting";
 import Helpsupport from "./components/Helpsupport";
+import Login from "./components/Login";
+import { SignedIn, SignedOut,SignInButton, SignOutButton } from "@clerk/clerk-react";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/applyleave" element={<Applyleave />} />
         <Route path="/payslip" element={<Payslip />} />
@@ -19,6 +24,7 @@ function App() {
         <Route path="/myprofile" element={<Profile />} />
         <Route path="/helpsupport" element={<Helpsupport />} />
       </Routes>
+      
     </BrowserRouter>
   );
 }
