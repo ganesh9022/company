@@ -163,8 +163,6 @@ const Navbar = () => {
                             <button className="Button mauve mt-3">Cancel</button>
                           </AlertDialog.Cancel>
                           <AlertDialog.Action asChild>
-                            
-                            {/* <button className="Button red mt-3">Logout</button> */}
                             <SignOutButton className="Button red mt-3" signOutCallback={()=> redirect('/')}/>
                           </AlertDialog.Action>
                         </div>
