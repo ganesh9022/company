@@ -4,7 +4,7 @@ import { MdNotifications } from "react-icons/md";
 import { IoMdMic } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import "./Style.css";
-const Tabbar1 = () => {
+const Searchbar = () => {
   return (
     <div>
       <Grid row="auto" gap="3" width="auto">
@@ -55,4 +55,4 @@ const Tabbar1 = () => {
     </div>
   );
 };
-export default Tabbar1;
+export default Searchbar;
