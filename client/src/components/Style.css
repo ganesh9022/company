@@ -1,22 +1,21 @@
 .Navbar {
   border-right: 1px solid grey;
+  /* width: 250px; */
+  /* float: right; */
 }
 .welcome {
   flex-wrap: wrap;
 }
-.hovers:hover {
-  color: limegreen;
-}
+
 .dot {
-  max-width: 15px;
-  max-height: 15px;
-  opacity: 0;
-  margin-top: 5px;
+ 
+  margin-top: 5.5px;
   color: limegreen;
 }
-.hovers:hover .dot {
-  opacity: 1;
+.avkash{
+  color: limegreen;
 }
+
 .notification {
   background-color: limegreen;
 }
@@ -122,3 +121,4 @@ button {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
