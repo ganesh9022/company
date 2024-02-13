@@ -5,8 +5,7 @@ import { Link, redirect } from "react-router-dom";
 import { BsStack } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
 import * as AlertDialog from "@radix-ui/react-alert-dialog";
-import { useClerk } from "@clerk/clerk-react";
-import { SignOutButton, SignedOut, SignIn } from "@clerk/clerk-react";
+import { SignOutButton } from "@clerk/clerk-react";
 const Navbar = () => {
   return (
     <div>
