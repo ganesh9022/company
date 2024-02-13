@@ -8,7 +8,6 @@ import Notification from "./components/Notification";
 import Setting from "./components/Setting";
 import Helpsupport from "./components/Helpsupport";
 import { RedirectToSignIn, SignedIn, SignedOut } from "@clerk/clerk-react";
-
 function App() {
   return (
     <BrowserRouter>
