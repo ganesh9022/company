@@ -5,14 +5,17 @@ import Applyleave from "./components/Applyleave";
 import Payslip from "./components/Payslip";
 import Profile from "./components/Profile";
 import Notification from "./components/Notification";
+import Login from "./components/Login";
 import Setting from "./components/Setting";
 import Helpsupport from "./components/Helpsupport";
-import { RedirectToSignIn, SignedIn, SignedOut } from "@clerk/clerk-react";
+import {  SignedIn, SignedOut } from "@clerk/clerk-react";
 function App() {
   return (
     <BrowserRouter>
       <SignedOut>
-        <RedirectToSignIn/>
+        <Routes>
+        <Route path="/" element={<Login />} />
+        </Routes>
       </SignedOut>
       <SignedIn>
         <Routes>
