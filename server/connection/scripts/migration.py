@@ -77,3 +77,4 @@ if __name__ == "__main__":
     mongo_handler.get_conn()
     mongo_handler.get_db(mongo_handler.db_name)
     mongo_handler.create_collections()
+    
