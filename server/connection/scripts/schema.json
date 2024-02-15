@@ -1,0 +1,72 @@
+{
+
+    "user_collection" : {
+        "user_id": "str",
+        "firstname": "str",
+        "lastname": "str",
+        "gender": "str",
+        "email": "str",
+        "password": "str",
+        "role": "str",
+        "department": "str",
+        "date_of_joining": "datetime",
+        "designation": "str",
+        "account_number": "str",
+        "bank_name": "str",
+        "pan_number": "str",
+        "country_code": "str",
+        "date_of_birth": "datetime"
+    },
+
+    "department_collection" : {
+        "department": "str",
+        "manager": "str",
+        "user_id": "str",
+        "email": "str"
+    },
+
+
+    "leave_info_collection" : {
+        "user_id": "str",
+        "department": "str",
+        "total_leaves": "int",
+        "taken_leaves": "int",
+        "leave_balance": "int",
+        "leave_type": "str",
+        "start_date": "datetime",
+        "end_date": "datetime"
+    },
+
+    
+    "reaction_collection" : {
+        "user_id": "str",
+        "firstname": "str",
+        "lastname": "str",
+        "email": "str"
+    },
+
+    "data_collection" : {
+        "user_id": "str",
+        "firstname": "str",
+        "lastname": "str",
+        "email": "str"
+    },
+
+    
+    "automation_collection" : {
+        "user_id": "str",
+        "firstname": "str",
+        "lastname": "str",
+        "email": "str"
+    },
+   
+    "payslip_collection" :{
+        "user_id": "str",
+        "allowance(HRA)": "float",
+        "bonus": "float",
+        "pf": "float",
+        "professional_tax": "float",
+        "present_days": "int",
+        "total_salary": "float"
+    }
+}
