@@ -55,8 +55,7 @@ class MongoDBHandler:
                 try:
                     collections=self.list_collections()
                     if collection_name not in collections:
-                        collection = self.db.create_collection(collection_name)
-                        
+                        collection = self.db.create_collection(collection_name)                        
                         return {"message: " f"Created collection '{collection_name}'"}
                     else:
                         return {"message: " f"collection '{collection_name}' already exists"}
