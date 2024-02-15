@@ -48,14 +48,23 @@ class MongoDBHandler:
         except Exception as e:
             return {"message" : f"Error occurred while listing collections: {e}"}
 
-    def create_collections(self,schema_file):       
-            with open(schema_file, 'r') as f:
+    #Get schema
+    def get_schema(self,schema_file):
+        try:
+            with open(schema_file,'r') as f:
                 collection_schema=json.load(f)
+                return collection_schema
+        except Exception as e:
+            return {"message" : f"Error occurred while accessing schema: {e}"}
+
+    #Create collection
+    def create_collections(self):       
+            collection_schema=self.get_schema('schema.json')
             for collection_name, schema in collection_schema.items():
                 try:
                     collections=self.list_collections()
                     if collection_name not in collections:
-                        collection = self.db.create_collection(collection_name)                        
+                        self.db.create_collection(collection_name)
                         return {"message: " f"Created collection '{collection_name}'"}
                     else:
                         return {"message: " f"collection '{collection_name}' already exists"}
@@ -63,12 +72,8 @@ class MongoDBHandler:
                     print(f"Error occurred while creating collection '{collection_name}': {e}")
                   
 
-       
-
-
 if __name__ == "__main__":
     mongo_handler = MongoDBHandler()
     mongo_handler.get_conn()
     mongo_handler.get_db(mongo_handler.db_name)
-    mongo_handler.create_collections('schema.json')
-    mongo_handler.list_collections()
+    mongo_handler.create_collections()
