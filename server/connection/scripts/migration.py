@@ -39,23 +39,68 @@ class MongoDBHandler:
     def create_collections(self):
         try:
             collections_data = {
-                "user": {"user_id": "123", "firstname": "Harry", "lastname": "Bandgar",
-                         "gender": "Male", "email": "harryb@gmail.com",
-                         "password": "Harry@123", "role": "Fullstack developer",
-                         "department": "", "date_of_joining": "", "designation": "",
-                         "account_number": "", "bank_name": "", "pan_number": "", "country_code": "",
-                         "date_of_birth": ""},
-                "Departments": {"department": "", "manager": "", "user_id": "", "email": ""},
-                "leave_info": {"user_id": "", "department": "", "total_leaves": "",
-                               "taken_leaves": "", "leave_balance": "",
-                               "leave_type": "", "start_date": "", "end_date": ""},
-                "Reaction": {"user_id": "", "firstname": "", "lastname": "", "email": ""},
-                "Data": {"user_id": "", "firstname": "", "lastname": "", "email": ""},
-                "Automation": {"user_id": "", "firstname": "", "lastname": "", "email": ""},
-                "payslip": {"user_id": "", "allowance(HRA)": "",
-                            "bonus": "", "pf": "", "professional_tax": "",
-                            "present_days": "", "total_salary": ""}
-            }
+    "user": {
+        "user_id": "",
+        "firstname": "",
+        "lastname": "",
+        "gender": "",
+        "email": "",
+        "password": "",
+        "role": "",
+        "department": "",
+        "date_of_joining": "",
+        "designation": "",
+        "account_number": "",
+        "bank_name": "",
+        "pan_number": "",
+        "country_code": "",
+        "date_of_birth": ""
+    },
+    "Departments": {
+        "department": "",
+        "manager": "",
+        "user_id": "",
+        "email": ""
+    },
+    "leave_info": {
+        "user_id": "",
+        "department": "",
+        "total_leaves": "",
+        "taken_leaves": "",
+        "leave_balance": "",
+        "leave_type": "",
+        "start_date": "",
+        "end_date": ""
+    },
+    "Reaction": {
+        "user_id": "",
+        "firstname": "",
+        "lastname": "",
+        "email": ""
+    },
+    "Data": {
+        "user_id": "",
+        "firstname": "",
+        "lastname": "",
+        "email": ""
+    },
+    "Automation": {
+        "user_id": "",
+        "firstname": "",
+        "lastname": "",
+        "email": ""
+    },
+    "payslip": {
+        "user_id": "",
+        "allowance(HRA)": "",
+        "bonus": "",
+        "pf": "",
+        "professional_tax": "",
+        "present_days": "",
+        "total_salary": ""
+    }
+}
+
     
             print("Creating collections...")
             for collection_name, data in collections_data.items():
