@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import Applyleave from "./components/Applyleave";
 import Payslip from "./components/Payslip";
@@ -16,6 +16,7 @@ function App() {
       </SignedOut>
       <SignedIn>
         <Routes>
+          <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/applyleave" element={<Applyleave />} />
           <Route path="/payslip" element={<Payslip />} />
@@ -23,6 +24,7 @@ function App() {
           <Route path="/notification" element={<Notification />} />
           <Route path="/myprofile" element={<Profile />} />
           <Route path="/helpsupport" element={<Helpsupport />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </SignedIn>
     </BrowserRouter>

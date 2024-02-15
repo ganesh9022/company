@@ -1,14 +1,12 @@
 .Navbar {
-  border-right: 1px solid grey;
-  /* width: 250px; */
-  /* float: right; */
+  border-right: 1px solid #ccc;
 }
+
 .welcome {
   flex-wrap: wrap;
 }
 
 .dot {
- 
   margin-top: 5.5px;
   color: limegreen;
 }

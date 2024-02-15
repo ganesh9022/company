@@ -1,9 +1,10 @@
 import React from "react";
-import { Grid } from "@radix-ui/themes";
+import { Grid, Dialog } from "@radix-ui/themes";
 import { MdNotifications } from "react-icons/md";
 import { IoMdMic } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import "./Style.css";
+import { UserButton, UserProfile } from "@clerk/clerk-react";
 const Searchbar = () => {
   return (
     <div>
@@ -21,6 +22,16 @@ const Searchbar = () => {
               className="outline-none bg-transparent"
             />
             <IoMdMic size="1.2em" />
+          </div>
+          <div className="ml-5">
+            <Dialog.Root>
+            <Dialog.Trigger>
+              <UserButton />
+            </Dialog.Trigger>
+            <Dialog.Content className="wide-content" style={{ width: '600px' }}>
+              <UserProfile />
+            </Dialog.Content>
+          </Dialog.Root>
           </div>
 
           <div className="md:hidden flex items-center">

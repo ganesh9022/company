@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { Flex, Box } from '@radix-ui/themes';
+import { Flex, Box, Dialog } from '@radix-ui/themes';
 import Tabbar from "./Tabbar";
+import { UserButton, UserProfile } from "@clerk/clerk-react";
 const Dashboard = () => {
   return (
     <Flex>
@@ -12,16 +13,17 @@ const Dashboard = () => {
         <Box>
           <Tabbar />
         </Box>
-        <Box height="auto">
-          <Flex>
-            <div className="w-4/6  " >
-            </div>
-            <div className="w-2/6 ">
-              <Box>
-              </Box>
-            </div>
-          </Flex>
-        </Box>
+        
+      </div>
+      <div className="ml-2 mr-3 mt-7">
+        <Dialog.Root>
+          <Dialog.Trigger>
+            <UserButton style={{ width: '60px', height: '60px' }}/>
+          </Dialog.Trigger>
+          <Dialog.Content className="wide-content" style={{ width: '600px' }}>
+            <UserProfile />
+          </Dialog.Content>
+        </Dialog.Root>
       </div>
     </Flex>
   );
