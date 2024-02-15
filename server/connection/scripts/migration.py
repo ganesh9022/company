@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
+from datetime import datetime
 import json
 
 
@@ -17,7 +18,6 @@ class MongoDBHandler:
         self.client = None
         self.db = None
 
-    #Connection
     def get_conn(self):
         try:
             self.client = MongoClient(self.uri)
@@ -27,20 +27,19 @@ class MongoDBHandler:
             print(f"Error occurred while getting connection from mongo client. \n Error: {e}")
         return self.client
     
-    #Database creation
+    #database ceration
     def get_db(self,db_name):
         databases = self.client.list_database_names()
-        if db_name in databases:                   #Check if db already exits
+        if db_name in databases:                   #check if db already exits
             self.db=self.client[db_name]
             return self.db
         else:
             try:
-                self.db = self.client[db_name]   
+                self.db = self.client[db_name]     #db creation
             except Exception as e:
                 return f"Error occurred while creating database {db_name} : {e}"
             return self.db
 
-    
     #List collections
     def list_collections(self):
         try:
