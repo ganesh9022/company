@@ -1,0 +1,20 @@
+.Navbar {
+  border-right: 1px solid #ccc;
+}
+
+.welcome {
+  flex-wrap: wrap;
+}
+
+.dot {
+  margin-top: 5.5px;
+  color: limegreen;
+}
+.avkash{
+  color: limegreen;
+}
+
+.notification {
+  background-color: limegreen;
+}
+
