@@ -11,9 +11,7 @@ const Searchbar = () => {
     <div>
       <Grid row="auto" gap="3" width="auto">
         <div className="logo-sidebar fixed top-4 right-0 mr-3 flex items-center p-2 flex-wrap">
-          <div className="notification hidden md:flex items-center mr-3 rounded-full border p-2 ">
             <Notificationmodal/>
-          </div>
 
           <div className="hidden md:flex items-center bg-white border rounded-full p-2">
             <IoIosSearch size="1.2em" />
