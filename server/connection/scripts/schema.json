@@ -1,20 +1,20 @@
 {
 
     "user_collection" : {
-        "user_id": "str",
-        "firstname": "str",
-        "lastname": "str",
-        "gender": "str",
-        "email": "str",
-        "password": "str",
-        "role": "str",
-        "department": "str",
+        "user_id": "123",
+        "firstname": "Mihir",
+        "lastname": "Vanave",
+        "gender": "Male",
+        "email": "abc@gmail.com",
+        "password": "abd",
+        "role": "dmf",
+        "department": "dmmd",
         "date_of_joining": "datetime",
-        "designation": "str",
-        "account_number": "str",
-        "bank_name": "str",
-        "pan_number": "str",
-        "country_code": "str",
+        "designation": "hi",
+        "account_number": "hi",
+        "bank_name": "hi",
+        "pan_number": "hi",
+        "country_code": "hi",
         "date_of_birth": "datetime"
     },
 
@@ -70,3 +70,4 @@
         "total_salary": "float"
     }
 }
+
