@@ -9,13 +9,13 @@ const Dashboard = () => {
       <div className="w-1/6  ">
         <Navbar />
       </div>
-      <div className="w-5/6 ">
+      <div className="w-5/6 mr-8">
         <Box>
           <Tabbar />
         </Box>
         
       </div>
-      <div className="ml-2 mr-3 mt-7">
+      <div className="ml-2 mr-5 mt-7">
         <Dialog.Root>
           <Dialog.Trigger>
             <UserButton style={{ width: '60px', height: '60px' }}/>

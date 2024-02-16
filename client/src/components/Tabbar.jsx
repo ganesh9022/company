@@ -18,7 +18,7 @@ const Tabbar = () => {
           <div className=" notification hidden md:flex items-center mr-3 rounded-full border p-2 ">
             <MdNotifications size="1.5em" color="white" />
           </div>
-          <div className="hidden md:flex items-center bg-white border rounded-full p-2">
+          <div className="hidden md:flex items-center bg-white border rounded-full p-2 mr-5">
             <IoIosSearch size="1.2em" />
             <input
               type="text"

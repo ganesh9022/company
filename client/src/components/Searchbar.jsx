@@ -9,7 +9,7 @@ const Searchbar = () => {
   return (
     <div>
       <Grid row="auto" gap="3" width="auto">
-        <div className="logo-sidebar fixed top-4 right-0 mr-11 flex items-center p-2 flex-wrap">
+        <div className="logo-sidebar fixed top-4 right-0 mr-3 flex items-center p-2 flex-wrap">
           <div className="notification hidden md:flex items-center mr-3 rounded-full border p-2 ">
             <MdNotifications size="1.5em" color="white" />
           </div>
