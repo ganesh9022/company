@@ -68,9 +68,9 @@ class MongoDBHandler:
                     self.db.create_collection(collection_name)
                     collection = self.db[collection_name]
                     collection.insert_many(documents)  # Insert documents into the collection
-                    print(f"Created collection '{collection_name}' and inserted {len(documents)} documents.")
+                    logging.info(f"Created collection '{collection_name}' and inserted {len(documents)} documents.")
                 else:
-                    print(f"Collection '{collection_name}' already exists.")
+                    logging.info(f"Collection '{collection_name}' already exists.")
             except Exception as e:
                 logging.error(f"Error occurred while creating collection '{collection_name}': {e}")
 
