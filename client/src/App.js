@@ -6,6 +6,7 @@ import Payslip from "./components/Payslip";
 import Profile from "./components/Profile";
 import Notification from "./components/Notification";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 import Setting from "./components/Setting";
 import Helpsupport from "./components/Helpsupport";
 import {  SignedIn, SignedOut } from "@clerk/clerk-react";
@@ -15,11 +16,11 @@ function App() {
       <SignedOut>
         <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         </Routes>
       </SignedOut>
       <SignedIn>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/applyleave" element={<Applyleave />} />
           <Route path="/payslip" element={<Payslip />} />
