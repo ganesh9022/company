@@ -1,3 +1,6 @@
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/violet.css';
 
 .profile-wrapper {  
     position: absolute;
@@ -57,9 +60,7 @@
   
 
 
-  @import '@radix-ui/colors/black-alpha.css';
-@import '@radix-ui/colors/mauve.css';
-@import '@radix-ui/colors/violet.css';
+
 
 
 .DropdownMenuContent,
@@ -226,11 +227,6 @@
 }
 
 
-
-
-@import '@radix-ui/colors/black-alpha.css';
-@import '@radix-ui/colors/mauve.css';
-@import '@radix-ui/colors/violet.css';
 
 .ScrollAreaRoot {
   height: 50vh;
