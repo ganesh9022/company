@@ -1,23 +1,36 @@
-.Navbar {
-  border-right: 1px solid grey;
-  /* width: 250px; */
-  /* float: right; */
-}
-.welcome {
-  flex-wrap: wrap;
+.navbar-wrapper {
+  border-right: 1px solid #ccc; 
 }
 
-.dot {
- 
-  margin-top: 5.5px;
-  color: limegreen;
+@media screen and (max-width: 768px) {
+  .navbar-wrapper {
+    margin-left: none; 
+  }
+}
+
+.welcome {
+  flex-wrap: wrap;
 }
 .avkash{
   color: limegreen;
 }
-
 .notification {
   background-color: limegreen;
+}
+.nav-link-box {
+  display: inline-block;
+  padding: 6px 20px; 
+  width: 210px; 
+ height: 40px; 
+}
+.logoutbutton{
+  padding: 6px 20px;
+}
+.nav-link-box.active {
+  margin-left: 3px;
+}
+.nav-link-box.active:hover {
+  font-size: 6;
 }
 @import '@radix-ui/colors/black-alpha.css';
 @import '@radix-ui/colors/mauve.css';
