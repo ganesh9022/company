@@ -17,8 +17,8 @@ const Tabbar = () => {
         </Box>
 
         <div className="logo-sidebar fixed top-4 right-0 mr-11 flex items-center p-2 flex-wrap">
-        <Notificationmodal />
-          <div className="hidden md:flex items-center bg-white border rounded-full p-2">
+          <Notificationmodal />
+          <div className="hidden md:flex items-center bg-white border rounded-full p-2 mr-5">
             <IoIosSearch size="1.2em" />
             <input
               type="text"

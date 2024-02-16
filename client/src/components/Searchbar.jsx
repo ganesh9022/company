@@ -1,16 +1,19 @@
 import React from "react";
-import { Grid } from "@radix-ui/themes";
+import { Grid, Dialog } from "@radix-ui/themes";
 import { MdNotifications } from "react-icons/md";
 import { IoMdMic } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import Notificationmodal from "./Notificationmodal";
 import "./Style.css";
+import { UserButton, UserProfile } from "@clerk/clerk-react";
 const Searchbar = () => {
   return (
     <div>
       <Grid row="auto" gap="3" width="auto">
-        <div className="logo-sidebar fixed top-4 right-0 mr-11 flex items-center p-2 flex-wrap">
-        <Notificationmodal/>
+        <div className="logo-sidebar fixed top-4 right-0 mr-3 flex items-center p-2 flex-wrap">
+          <div className="notification hidden md:flex items-center mr-3 rounded-full border p-2 ">
+            <Notificationmodal/>
+          </div>
 
           <div className="hidden md:flex items-center bg-white border rounded-full p-2">
             <IoIosSearch size="1.2em" />
@@ -20,6 +23,16 @@ const Searchbar = () => {
               className="outline-none bg-transparent"
             />
             <IoMdMic size="1.2em" />
+          </div>
+          <div className="ml-5">
+            <Dialog.Root>
+            <Dialog.Trigger>
+              <UserButton />
+            </Dialog.Trigger>
+            <Dialog.Content className="wide-content" style={{ width: '600px' }}>
+              <UserProfile />
+            </Dialog.Content>
+          </Dialog.Root>
           </div>
 
           <div className="md:hidden flex items-center">
