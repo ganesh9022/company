@@ -88,3 +88,4 @@
     "required": ["user_id", "allowance(HRA)", "bonus", "pf", "professional_tax", "present_days", "total_salary"]
   }
 }
+
