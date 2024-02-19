@@ -1,5 +1,5 @@
 {
-  "user_collection": {
+  "User_Collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
@@ -19,7 +19,7 @@
     },
     "required": ["user_id", "first_name", "last_name", "email", "password", "role", "date_of_joining", "designation"]
   },
-  "department_collection": {
+  "Department_Collection": {
     "bsonType": "object",
     "properties": {
       "department": {"bsonType": "string"},
@@ -29,7 +29,7 @@
     },
     "required": ["department", "manager", "user_id", "email"]
   },
-  "leave_info_collection": {
+  "Leave_Info_Collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
@@ -43,7 +43,7 @@
     },
     "required": ["user_id", "department", "total_leaves", "taken_leaves", "leave_balance", "leave_type", "start_date", "end_date"]
   },
-  "reaction_collection": {
+  "Reaction_Collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
@@ -53,7 +53,7 @@
     },
     "required": ["user_id", "first_name", "last_name", "email"]
   },
-  "data_collection": {
+  "Data_Collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
@@ -63,7 +63,7 @@
     },
     "required": ["user_id", "first_name", "last_name", "email"]
   },
-  "automation_collection": {
+  "Automation_Collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
@@ -73,7 +73,7 @@
     },
     "required": ["user_id", "first_name", "last_name", "email"]
   },
-  "slip_collection": {
+  "Payslip_Collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
