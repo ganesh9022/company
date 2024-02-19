@@ -59,8 +59,16 @@
   }
   
 
+  .Nomsgs{
+    position: absolute;
+    top:50%;
+    left: 30%;
+  }
 
 
+.fixwidth{
+  min-width: 230px;
+}
 
 
 .DropdownMenuContent,

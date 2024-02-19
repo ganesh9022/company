@@ -68,7 +68,8 @@ const Notificationmodal = ()=>{
                     <IoClose size="1.5em" color="#333" onClick={() => setOpen(false)} />
                   </button>
                   </div>
-                    {notificationList.map((notification,index) => (
+                  {notificationList.length > 0 ? (
+                    notificationList.map((notification,index) => (
                       <div className="Tag notification-item" key={notification}>
                         <div className="profile-wrapper">
                           {renderProfileImage(notification.profile)}
@@ -80,7 +81,11 @@ const Notificationmodal = ()=>{
                           <IoClose size="1.5em" color="#333" />
                         </button>
                       </div>
-                    ))}
+                    ))
+                  )
+                   : (
+                    <p className="Nomsgs">No messages yet.</p>
+                  )}
                   </div>
                 </ScrollArea.Viewport>
                 <ScrollArea.Scrollbar className="ScrollAreaScrollbar" orientation="vertical">
