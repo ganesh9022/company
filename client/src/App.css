@@ -55,14 +55,14 @@
 
   .modal-wrapper {
     position: relative;
-    z-index: 1000; /* Reduced value */
+    z-index: 1000; 
   }
   
 
   .Nomsgs{
     position: absolute;
     top:50%;
-    left: 30%;
+    left: 28%;
   }
 
 

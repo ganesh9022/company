@@ -84,7 +84,7 @@ const Notificationmodal = ()=>{
                     ))
                   )
                    : (
-                    <p className="Nomsgs">No messages yet.</p>
+                    <p className="Nomsgs">No notifications yet.</p>
                   )}
                   </div>
                 </ScrollArea.Viewport>
