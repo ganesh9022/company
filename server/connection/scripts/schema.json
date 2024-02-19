@@ -14,7 +14,6 @@
       "designation": {"bsonType": "string"},
       "account_number": {"bsonType": "string"},
       "bank_name": {"bsonType": "string"},
-      "pan_number": {"bsonType": "string"},
       "country_code": {"bsonType": "string"},
       "date_of_birth": {"bsonType": "date"}
     },
@@ -85,7 +84,7 @@
       "present_days": {"bsonType": "int"},
       "total_salary": {"bsonType": "double"}
     },
-    "required": ["user_id", "allowance(HRA)", "bonus", "pf", "professional_tax", "present_days", "total_salary"]
+    "required": ["user_id", "allowance_hra", "bonus", "pf", "professional_tax", "present_days", "total_salary"]
   }
 }
 
