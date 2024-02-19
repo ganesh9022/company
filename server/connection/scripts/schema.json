@@ -3,8 +3,8 @@
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
-      "firstname": {"bsonType": "string"},
-      "lastname": {"bsonType": "string"},
+      "first_name": {"bsonType": "string"},
+      "last_name": {"bsonType": "string"},
       "gender": {"bsonType": "string"},
       "email": {"bsonType": "string"},
       "password": {"bsonType": "string"},
@@ -17,7 +17,7 @@
       "country_code": {"bsonType": "string"},
       "date_of_birth": {"bsonType": "date"}
     },
-    "required": ["user_id", "firstname", "lastname", "email", "password", "role", "date_of_joining", "designation"]
+    "required": ["user_id", "first_name", "last_name", "email", "password", "role", "date_of_joining", "designation"]
   },
   "department_collection": {
     "bsonType": "object",
@@ -47,37 +47,37 @@
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
-      "firstname": {"bsonType": "string"},
-      "lastname": {"bsonType": "string"},
+      "first_name": {"bsonType": "string"},
+      "last_name": {"bsonType": "string"},
       "email": {"bsonType": "string"}
     },
-    "required": ["user_id", "firstname", "lastname", "email"]
+    "required": ["user_id", "first_name", "last_name", "email"]
   },
   "data_collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
-      "firstname": {"bsonType": "string"},
-      "lastname": {"bsonType": "string"},
+      "first_name": {"bsonType": "string"},
+      "last_name": {"bsonType": "string"},
       "email": {"bsonType": "string"}
     },
-    "required": ["user_id", "firstname", "lastname", "email"]
+    "required": ["user_id", "first_name", "last_name", "email"]
   },
   "automation_collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
-      "firstname": {"bsonType": "string"},
-      "lastname": {"bsonType": "string"},
+      "first_name": {"bsonType": "string"},
+      "last_name": {"bsonType": "string"},
       "email": {"bsonType": "string"}
     },
-    "required": ["user_id", "firstname", "lastname", "email"]
+    "required": ["user_id", "first_name", "last_name", "email"]
   },
   "slip_collection": {
     "bsonType": "object",
     "properties": {
       "user_id": {"bsonType": "string"},
-      "allowance(HRA)": {"bsonType": "double"},
+      "allowance_hra": {"bsonType": "double"},
       "bonus": {"bsonType": "double"},
       "pf": {"bsonType": "double"},
       "professional_tax": {"bsonType": "double"},
