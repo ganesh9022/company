@@ -4,10 +4,11 @@ import './Style.css'
 const Signup = () => {
     return (
       <div>
-        <div style={{ display: 'flex', justifyContent: "center", alignItems: "center", marginTop: "70px"}}>
+        <div style={{ display: 'flex', justifyContent: "center", alignItems: "center", marginBottom: "40px"}}>
           <SignUp afterSignUpUrl={'/dashboard'} />
         </div>
       </div>
     );
   };
   export default Signup;
+  
