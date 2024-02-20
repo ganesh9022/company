@@ -1,8 +1,7 @@
 import React from "react";
 import { Flex, Grid, Text } from "@radix-ui/themes";
-import RobotImage from "./robot.gif";
+import RobotImage from "../assets/robot.gif";
 import { BsStack } from "react-icons/bs";
-import "./Style.css";
 const PageNotFound = () => {
     return (
         <Grid columns="1fr 1fr" gap={20} style={{ position: "absolute", top: "150px", left: "300px" }}>

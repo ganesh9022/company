@@ -9,7 +9,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Setting from "./components/Setting";
 import Helpsupport from "./components/Helpsupport";
-import PageNotFound from "./components/401Page";
+import PageNotFound from "./components/errors/401Error";
 import { SignedIn, SignedOut } from "@clerk/clerk-react";
 function App() {
   return (
