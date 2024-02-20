@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Grid, Flex, Text, Inset, Box, Dialog, Button } from "@radix-ui/themes";
+import React from "react";
+import { Grid, Flex, Text, Inset, Box } from "@radix-ui/themes";
 import "./Style.css";
 import { Link, useLocation } from "react-router-dom";
 import { BsStack } from "react-icons/bs";

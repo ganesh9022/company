@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Flex, Box, Dialog } from '@radix-ui/themes';
 import Tabbar from "./Tabbar";
+import Searchbar from "./Searchbar";
 import { UserButton, UserProfile } from "@clerk/clerk-react";
 const Dashboard = () => {
   return (
@@ -11,7 +12,8 @@ const Dashboard = () => {
       </div>
       <div className="w-5/6 mr-8">
         <Box>
-          <Tabbar />
+          <Tabbar/>
+          <Searchbar />
         </Box>
         
       </div>
