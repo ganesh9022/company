@@ -65,7 +65,7 @@ class MongoDBHandler:
             try:
                 collections = self.list_collections()
                 if collection_name not in collections:
-                    self.db.create_collection(collection_name)
+                    self.db.create_collection([collection_name])
                     collection = self.db[collection_name]
                     collection.insert_many(documents)  # Insert documents into the collection
                     logging.info(f"Created collection '{collection_name}' and inserted {len(documents)} documents.")
