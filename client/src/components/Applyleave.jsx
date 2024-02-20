@@ -5,7 +5,7 @@ import Searchbar from "./Searchbar";
 const Applyleave =()=>{
   return (
       <Flex>
-        <div className="w-1/6  ">
+        <div className="w-1/6">
           <Navbar />
         </div>
         <div className="w-5/6 ">
