@@ -13,7 +13,7 @@ load_dotenv()
 class MongoDBHandler:
     def __init__(self): 
         self.uri = os.getenv('URI')
-        self.db_name = os.getenv('DB_NAME', 'leaveportal')  # Default one is leave portal
+        self.db_name = os.getenv('DB_NAME', 'leave_portal')  # Default one is leave portal
         
         # Runtime
         self.client = None
