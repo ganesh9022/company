@@ -1,4 +1,4 @@
-import React from "react";
+import {React} from "react";
 import { Grid, Flex, Text, Inset, Box } from "@radix-ui/themes";
 import "./Style.css";
 import { Link, useLocation } from "react-router-dom";
