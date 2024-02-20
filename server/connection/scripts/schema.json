@@ -1,0 +1,90 @@
+{
+  "user_collection": {
+    "bsonType": "object",
+    "properties": {
+      "user_id": {"bsonType": "string"},
+      "first_name": {"bsonType": "string"},
+      "last_name": {"bsonType": "string"},
+      "gender": {"bsonType": "string"},
+      "email": {"bsonType": "string"},
+      "password": {"bsonType": "string"},
+      "role": {"bsonType": "string"},
+      "department": {"bsonType": "string"},
+      "date_of_joining": {"bsonType": "date"},
+      "designation": {"bsonType": "string"},
+      "account_number": {"bsonType": "string"},
+      "bank_name": {"bsonType": "string"},
+      "country_code": {"bsonType": "string"},
+      "date_of_birth": {"bsonType": "date"}
+    },
+    "required": ["user_id", "first_name", "last_name", "email", "password", "role", "date_of_joining", "designation"]
+  },
+  "department_collection": {
+    "bsonType": "object",
+    "properties": {
+      "department": {"bsonType": "string"},
+      "manager": {"bsonType": "string"},
+      "user_id": {"bsonType": "string"},
+      "email": {"bsonType": "string"}
+    },
+    "required": ["department", "manager", "user_id", "email"]
+  },
+  "leave_info_collection": {
+    "bsonType": "object",
+    "properties": {
+      "user_id": {"bsonType": "string"},
+      "department": {"bsonType": "string"},
+      "total_leaves": {"bsonType": "int"},
+      "taken_leaves": {"bsonType": "int"},
+      "leave_balance": {"bsonType": "int"},
+      "leave_type": {"bsonType": "string"},
+      "start_date": {"bsonType": "date"},
+      "end_date": {"bsonType": "date"}
+    },
+    "required": ["user_id", "department", "total_leaves", "taken_leaves", "leave_balance", "leave_type", "start_date", "end_date"]
+  },
+  "reaction_collection": {
+    "bsonType": "object",
+    "properties": {
+      "user_id": {"bsonType": "string"},
+      "first_name": {"bsonType": "string"},
+      "last_name": {"bsonType": "string"},
+      "email": {"bsonType": "string"}
+    },
+    "required": ["user_id", "first_name", "last_name", "email"]
+  },
+  "data_collection": {
+    "bsonType": "object",
+    "properties": {
+      "user_id": {"bsonType": "string"},
+      "first_name": {"bsonType": "string"},
+      "last_name": {"bsonType": "string"},
+      "email": {"bsonType": "string"}
+    },
+    "required": ["user_id", "first_name", "last_name", "email"]
+  },
+  "automation_collection": {
+    "bsonType": "object",
+    "properties": {
+      "user_id": {"bsonType": "string"},
+      "first_name": {"bsonType": "string"},
+      "last_name": {"bsonType": "string"},
+      "email": {"bsonType": "string"}
+    },
+    "required": ["user_id", "first_name", "last_name", "email"]
+  },
+  "payslip_collection": {
+    "bsonType": "object",
+    "properties": {
+      "user_id": {"bsonType": "string"},
+      "allowance_hra": {"bsonType": "double"},
+      "bonus": {"bsonType": "double"},
+      "pf": {"bsonType": "double"},
+      "professional_tax": {"bsonType": "double"},
+      "present_days": {"bsonType": "int"},
+      "total_salary": {"bsonType": "double"}
+    },
+    "required": ["user_id", "allowance_hra", "bonus", "pf", "professional_tax", "present_days", "total_salary"]
+  }
+}
+
