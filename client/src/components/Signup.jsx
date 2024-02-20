@@ -1,6 +1,6 @@
-import React from 'react';
-import { SignUp } from '@clerk/clerk-react';
-import './Style.css'
+import React from "react";
+import { SignUp } from "@clerk/clerk-react";
+import "./Style.css";
 const Signup = () => {
     return (
       <div>

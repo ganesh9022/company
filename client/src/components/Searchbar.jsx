@@ -25,13 +25,13 @@ const Searchbar = () => {
           </div>
           <div className="ml-5">
             <Dialog.Root>
-            <Dialog.Trigger>
-              <UserButton />
-            </Dialog.Trigger>
-            <Dialog.Content className="wide-content" style={{ width: '600px' }}>
-              <UserProfile />
-            </Dialog.Content>
-          </Dialog.Root>
+              <Dialog.Trigger>
+                <UserButton />
+              </Dialog.Trigger>
+              <Dialog.Content>
+                <UserProfile />
+              </Dialog.Content>
+            </Dialog.Root>
           </div>
 
           <div className="md:hidden flex items-center">

@@ -1,14 +1,11 @@
-.Navbar {
+.navbar-wrapper {
   border-right: 1px solid #ccc;
 }
 .welcome {
   flex-wrap: wrap;
 }
-.dot {
-  margin-top: 5.5px;
-  color: limegreen;
-}
-.avkash{
+
+.avkash {
   color: limegreen;
 }
 .notification {
@@ -22,3 +19,27 @@ img{
   height: 300px;
 }
 
+.nav-link-box {
+  display: inline-block;
+  padding: 6px 20px;
+  width: 210px;
+  height: 40px;
+}
+
+.logoutbutton {
+  padding: 6px 20px;
+}
+
+.nav-link-box.active {
+  margin-left: 3px;
+}
+
+.nav-link-box.active:hover {
+  font-size: 6;
+}
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
