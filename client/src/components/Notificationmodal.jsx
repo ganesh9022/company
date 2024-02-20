@@ -3,6 +3,7 @@ import { IoClose } from "react-icons/io5";
 import { MdNotifications } from "react-icons/md";
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import LeaveImg from './assets/leave.svg';
 
 
 const Notificationmodal = ()=>{
@@ -35,7 +36,7 @@ const Notificationmodal = ()=>{
 
       const renderProfileImage = (profile) => {
         return profile ? (
-          <img src={profile} alt="Profile" className="profile-image" />
+                <img src={LeaveImg} alt="profile" className="profile-image" />
         ) : (
           <MdNotifications size="1.5em" color="#333" />
         );
