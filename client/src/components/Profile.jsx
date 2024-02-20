@@ -6,7 +6,7 @@ import Searchbar from "./Searchbar";
 const Profile = () => {
   return (
     <Flex>
-      <div className="w-1/6 fixwidth">
+      <div className="w-1/6">
         <Navbar />
       </div>
       <div className="w-5/6 ">

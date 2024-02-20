@@ -66,11 +66,6 @@
   }
 
 
-.fixwidth{
-  min-width: 230px;
-}
-
-
 .DropdownMenuContent,
 .DropdownMenuSubContent {
   min-width: 220px;

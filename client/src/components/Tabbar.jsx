@@ -1,8 +1,5 @@
 import React from "react";
 import { Grid, Box, Text } from "@radix-ui/themes";
-import { MdNotifications } from "react-icons/md";
-import { IoMdMic } from "react-icons/io";
-import { IoIosSearch } from "react-icons/io";
 import "./Style.css";
 const Tabbar = () => {
   return (
