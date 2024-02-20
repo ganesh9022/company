@@ -9,14 +9,14 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Setting from "./components/Setting";
 import Helpsupport from "./components/Helpsupport";
-import {  SignedIn, SignedOut } from "@clerk/clerk-react";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
 function App() {
   return (
     <BrowserRouter>
       <SignedOut>
         <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </SignedOut>
       <SignedIn>
