@@ -6,12 +6,12 @@ import Navbar from "./Navbar";
 const Payslip = () => {
   return (
     <Flex>
-      <div className="w-1/6 fixwidth ">
+      <div className="w-1/6  ">
         <Navbar/>
       </div>
       <div className="w-5/6 ">
         <Box>
-          <Searchbar/>
+          <Searchbar />
         </Box>
       </div>
     </Flex>

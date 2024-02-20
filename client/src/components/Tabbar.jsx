@@ -1,14 +1,21 @@
 import React from "react";
-import { Grid, Box, Text} from "@radix-ui/themes";
-
-
+import { Grid, Box, Text } from "@radix-ui/themes";
+import { MdNotifications } from "react-icons/md";
+import { IoMdMic } from "react-icons/io";
+import { IoIosSearch } from "react-icons/io";
 import "./Style.css";
 const Tabbar = () => {
   return (
     <div>
       <Grid row="auto" gap="3" width="auto">
         <Box height="8" className="welcome flex items-center">
-          <Text size="6" weight="bold" mt="6" ml="5" className="md:inline  hidden ">
+          <Text
+            size="6"
+            weight="bold"
+            mt="6"
+            ml="5"
+            className="md:inline  hidden "
+          >
             Welcome, Nikhil Joshi
           </Text>
         </Box>

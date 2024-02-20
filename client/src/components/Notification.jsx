@@ -11,7 +11,7 @@ const Notification = () => {
       </div>
       <div className="w-5/6 ">
         <Box>
-          <Searchbar/>
+          <Searchbar />
         </Box>
       </div>
     </Flex>
