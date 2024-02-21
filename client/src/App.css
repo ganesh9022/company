@@ -1,70 +1,64 @@
-@import '@radix-ui/colors/black-alpha.css';
-@import '@radix-ui/colors/mauve.css';
-@import '@radix-ui/colors/violet.css';
+.profile-wrapper {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  margin: 0 0 3px 3px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
 
-.profile-wrapper {  
-    position: absolute;
-    left :0;
-    top:9px;
-    margin:0 0 3px 3px;
-    width:30px;
-    display: flex;
-    align-items: center;
-  }
-  .header{
-    position: relative;
-  }
-  .close-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top:0;
-  }
-  
-  .profile-image {
-    width:25px;
-    border-radius: 50%;
-  }
-  
-  .notification-item {
-    display: flex;
-    width: 270px;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    
-    padding: 10px 0 5px 36px ;
-    position: relative;
-  }
+.header {
+  position: relative;
+}
 
-  body.modal-open {
-    overflow: visible !important;
-  }
-  
-  
-  .close-notification {
-    position: absolute;
-    right :0;
-    margin:3px;
-    margin-top: 2px;
-    color: #888;
-    font-size: 12px;
-    cursor: pointer;
-  }
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-  .modal-wrapper {
-    position: relative;
-    z-index: 1000; 
-  }
-  
+.profile-image {
+  width: 25px;
+  border-radius: 50%;
+}
 
-  .Nomsgs{
-    position: absolute;
-    top:50%;
-    left: 28%;
-  }
+.notification-item {
+  display: flex;
+  width: 270px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 10px 0 5px 36px;
+  position: relative;
+}
 
+body.modal-open {
+  overflow: visible !important;
+}
+
+.close-notification {
+  position: absolute;
+  right: 0;
+  margin: 3px;
+  margin-top: 2px;
+  color: #888;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.modal-wrapper {
+  position: relative;
+  z-index: 1000;
+}
+
+.Nomsgs {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+}
 
 .DropdownMenuContent,
 .DropdownMenuSubContent {
@@ -83,14 +77,17 @@
 .DropdownMenuSubContent[data-side='top'] {
   animation-name: slideDownAndFade;
 }
+
 .DropdownMenuContent[data-side='right'],
 .DropdownMenuSubContent[data-side='right'] {
   animation-name: slideLeftAndFade;
 }
+
 .DropdownMenuContent[data-side='bottom'],
 .DropdownMenuSubContent[data-side='bottom'] {
   animation-name: slideUpAndFade;
 }
+
 .DropdownMenuContent[data-side='left'],
 .DropdownMenuSubContent[data-side='left'] {
   animation-name: slideRightAndFade;
@@ -113,10 +110,12 @@
   user-select: none;
   outline: none;
 }
+
 .DropdownMenuSubTrigger[data-state='open'] {
   background-color: var(--violet-4);
   color: var(--violet-11);
 }
+
 .DropdownMenuItem[data-disabled],
 .DropdownMenuCheckboxItem[data-disabled],
 .DropdownMenuRadioItem[data-disabled],
@@ -124,6 +123,7 @@
   color: var(--mauve-8);
   pointer-events: none;
 }
+
 .DropdownMenuItem[data-highlighted],
 .DropdownMenuCheckboxItem[data-highlighted],
 .DropdownMenuRadioItem[data-highlighted],
@@ -170,15 +170,16 @@
   background-color: white;
 }
 
-
 .RightSlot {
   margin-left: auto;
   padding-left: 20px;
   color: var(--mauve-11);
 }
-[data-highlighted] > .RightSlot {
+
+[data-highlighted]>.RightSlot {
   color: white;
 }
+
 [data-disabled] .RightSlot {
   color: var(--mauve-8);
 }
@@ -188,6 +189,7 @@
     opacity: 0;
     transform: translateY(2px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -199,19 +201,19 @@
     opacity: 0;
     transform: translateX(-2px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-
-
 @keyframes slideDownAndFade {
   from {
     opacity: 0;
     transform: translateY(-2px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -223,13 +225,12 @@
     opacity: 0;
     transform: translateX(2px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
-
 
 .ScrollAreaRoot {
   height: 50vh;
@@ -253,12 +254,15 @@
   background: var(--black-a6);
   transition: background 160ms ease-out;
 }
+
 .ScrollAreaScrollbar:hover {
   background: var(--black-a8);
 }
+
 .ScrollAreaScrollbar[data-orientation='vertical'] {
   width: var(--scrollbar-size);
 }
+
 .ScrollAreaScrollbar[data-orientation='horizontal'] {
   flex-direction: column;
   height: var(--scrollbar-size);
@@ -270,7 +274,7 @@
   border-radius: var(--scrollbar-size);
   position: relative;
 }
-/* increase target size for touch devices https://www.w3.org/WAI/WCAG21/Understanding/target-size.html */
+
 .ScrollAreaThumb::before {
   content: '';
   position: absolute;

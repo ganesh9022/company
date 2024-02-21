@@ -6,20 +6,20 @@ import { BsStack } from "react-icons/bs";
 const Navbar = () => {
   const location = useLocation();
   return (
-    <div className="navbar-wrapper">
+    <Inset className="navbar-wrapper">
       <Grid align="center" wrap="nowrap" columns="1" gap="1" className="Navbar">
         <Link to="/dashboard">
           <Inset
             clip="padding-box"
             side="top"
             pb="current"
-            mt="4"
+            mt="5"
             ml="5"
             className="flex"
           >
             <BsStack color="limegreen" className="mt-4 text-xl" />
             <Text size="6" weight="bold" m="3" className="avkash">
-              AVKASH
+              Avkash
             </Text>
           </Inset>
         </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 currentPath={location.pathname}
                 page="setting"
               >
-                <Text> Setting </Text>
+                <Text> Settings </Text>
               </NavLink>
             </Flex>
             <Flex>
@@ -97,7 +97,7 @@ const Navbar = () => {
           </Grid>
         </Grid>
       </Grid>
-    </div>
+    </Inset>
   );
 };
 

@@ -1,7 +1,8 @@
 import React from "react";
 import { Grid, Box, Text } from "@radix-ui/themes";
 import "./Style.css";
-const Tabbar = () => {
+const Tabbar = (props) => {
+
   return (
     <div>
       <Grid row="auto" gap="3" width="auto">
@@ -13,7 +14,7 @@ const Tabbar = () => {
             ml="5"
             className="md:inline  hidden "
           >
-            Welcome, Nikhil Joshi
+           <p> {props.name}</p>
           </Text>
         </Box>
       </Grid>
