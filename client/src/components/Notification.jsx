@@ -5,7 +5,7 @@ import "./Style.css";
 import Searchbar from "./Searchbar";
 const Notification = () => {
   return (
-    <Flex>
+    <div>
       <Flex className="w-1/6">
         <Navbar />
       </Flex>
@@ -14,7 +14,7 @@ const Notification = () => {
           <Searchbar />
         </Box>
       </Flex>
-    </Flex>
+    </div>
   );
 };
 export default Notification;

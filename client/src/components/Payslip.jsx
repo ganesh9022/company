@@ -5,7 +5,7 @@ import Searchbar from "./Searchbar";
 import Navbar from "./Navbar";
 const Payslip = () => {
   return (
-    <Flex>
+    <div>
       <Flex className="w-1/6">
         <Navbar/>
       </Flex>
@@ -14,7 +14,7 @@ const Payslip = () => {
           <Searchbar />
         </Box>
       </Flex>
-    </Flex>
+    </div>
   );
 };
 export default Payslip;

@@ -5,16 +5,18 @@ import Navbar from "./Navbar";
 import Searchbar from "./Searchbar";
 const Setting = () => {
   return (
-    <Flex>
+    <div>
       <Flex className="w-1/6">
-        <Navbar/>
+        <Box>
+          <Navbar />
+        </Box>
       </Flex>
       <Flex className="w-5/6 ">
         <Box>
           <Searchbar />
         </Box>
       </Flex>
-    </Flex>
+    </div>
   );
 };
 export default Setting;

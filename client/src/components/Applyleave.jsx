@@ -4,16 +4,18 @@ import { Flex, Box } from "@radix-ui/themes";
 import Searchbar from "./Searchbar";
 const Applyleave = () => {
   return (
-    <Flex>
+    <div>
       <Flex className="w-1/6">
-        <Navbar />
+        <Box>
+          <Navbar />
+        </Box>
       </Flex>
       <Flex className="w-5/6 ">
         <Box>
           <Searchbar />
         </Box>
       </Flex>
-    </Flex>
+    </div>
   );
 };
 export default Applyleave;
